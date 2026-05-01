@@ -1,0 +1,6 @@
+import { z } from "zod";
+
+export const feedbackSchema = z.object({
+  rating: z.number().min(1).max(5),
+  comment: z.string().min(2).max(500).optional()
+});

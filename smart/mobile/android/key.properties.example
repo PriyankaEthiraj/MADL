@@ -1,0 +1,13 @@
+# ANDROID RELEASE SIGNING CONFIGURATION
+# 
+# INSTRUCTIONS:
+# 1. Copy this file and save as: android/key.properties (without .example extension)
+# 2. Generate your keystore using:
+#    keytool -genkey -v -keystore ~/upload-keystore.jks -keyalg RSA -keysize 2048 -validity 10000 -alias upload
+# 3. Fill in the values below with your keystore information
+# 4. NEVER commit key.properties to version control (it's in .gitignore)
+
+storePassword=YOUR_KEYSTORE_PASSWORD
+keyPassword=YOUR_KEY_PASSWORD
+keyAlias=upload
+storeFile=C:/Users/YourName/upload-keystore.jks
